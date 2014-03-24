@@ -1,0 +1,14 @@
+<div id="content">
+  <form method="post" action="/">
+    <h2>Your turn to play :)</h2>
+    <hr />
+    <span>Select your move:</span>
+    <select name="user_move">
+      <% for @move in @available_moves %>
+        <option value=<%= @move %>><%= @move %></option>
+      <% end %>
+    </select>
+    <input type="submit" value="Play" />
+    <hr />
+  </form>
+</div>
